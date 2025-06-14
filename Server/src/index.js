@@ -19,6 +19,6 @@ app.get("/api/media", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
+app.listen(3000,  '0.0.0.0' , () => {
   console.log('There is nothing in the desert and no man needs nothing.')
 });
