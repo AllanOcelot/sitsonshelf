@@ -1,8 +1,13 @@
 import express from "express";
-import fetch from "node-fetch";
+
+// Import routes
+import authRoutes from './routes/auth.js';
 
 const app = express();
 app.use(express.json());
+
+// Use imports 
+app.use('/api/auth', authRoutes);
 
 // change to w.e pb will run on locally
 const POCKETBASE_URL = "http://pocketbase:8090";
